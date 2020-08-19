@@ -22,11 +22,8 @@ gulp.task("minify", () => {
 });
 
 
-/*
-
 gulp.task('background',function(){
-	//gulp.watch("./source/index.html",["minify"]);
     gulp.watch("./source/scss/*.scss",["compilar_css"]);
+    gulp.watch("./source/index.html",["minify"]);
+    gulp.watch("./dist/css/*.css",["minifycss"]);
 });
-
-*/
